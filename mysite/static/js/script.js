@@ -23,7 +23,8 @@ $(document).on('click', '#button-predict', function () {
         alert("Write something");
     }
     else {
-        var requestURL = "predict?code=" + codeVal;//"https://lanGuesser.pythonanywhere.com/?month="+month+"&date="+date+"&year="+year;
+        var requestURL = "predict?code=" + codeVal;
+        //var requestURL = "https://lanGuesser.pythonanywhere.com/predict?code=" + codeVal;
 
         buttonPredict.addClass("disable");
         $.getJSON(requestURL, function (data) {
