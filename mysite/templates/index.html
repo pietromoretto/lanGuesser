@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+  <title>lanGuesser</title>
+</head>
+
+<body>
+  <h1>lan<b>G</b>uesser</h1>
+
+  <div id="code-container">
+    <textarea name="code" id="code" placeholder="Write or paste some code..."></textarea>
+  </div>
+  <a id="button-predict" class="butt">Predict</a>
+  
+  <div id="lang-container" class="hide">
+    <img src="{{ url_for('static', filename='images/python.svg') }}" alt="Python" id="PYTHON" class="lang hide">
+    <img src="{{ url_for('static', filename='images/java.svg') }}" alt="Java" id="JAVA" class="lang hide">
+    <img src="{{ url_for('static', filename='images/javascript.svg') }}" alt="Javascript" id="JAVASCRIPT" class="lang hide">
+    <img src="{{ url_for('static', filename='images/go.svg') }}" alt="Go" id="GO" class="lang hide">
+    <img src="{{ url_for('static', filename='images/php.svg') }}" alt="PHP" id="PHP" class="lang hide">
+    <img src="{{ url_for('static', filename='images/sql.svg') }}" alt="SQL" id="SQL" class="lang hide">
+    <img src="{{ url_for('static', filename='images/hmtl.svg') }}" alt="HTML" id="HTML" class="lang hide">
+    <img src="{{ url_for('static', filename='images/CSS.svg') }}" alt="CSS" id="CSS" class="lang hide">
+  </div>
+
+  <p id="result"></p>
+  
+  <br>
+  <a id="button-retry" class="butt hide">Retry</a>
+</body>
+
+</html>
