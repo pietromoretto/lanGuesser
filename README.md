@@ -10,20 +10,31 @@ Model has been trained on a [Jupyter Notebook](lanGuesser.ipynb) in Google Colab
 <img width="550" alt="model" src="https://user-images.githubusercontent.com/38654875/59158180-ff18b100-8ab6-11e9-9845-0c6196793b14.png">
 
 ## Supported Languages
-|--------|------|------------|-----|
-| Python | Java | Javascript | Go  |
-|--------|------|------------|-----|
-| PHP    | SQL  | HTML       | CSS |
+| Languages   |             |             |             |
+|-------------|-------------|-------------|-------------|
+| Python      | Java        | Javascript  | Go          |
+| PHP         | SQL         | HTML        | CSS         |
 
 ## Local Setup
 In [mysite](mysite) folder there is a Flask Web App that allows you to test the model on your local computer.
 ### Steps
 - Create a virtual environment with either
-  - virtualenv myenv
-  - conda create --name myenv
+  - ```bash
+    virtualenv myenv
+    ```
+  - ```bash
+    conda create --name myenv
+    ```
 - Install necessary packages with either
-  - pip install -r pip_requirements.txt
-  - while read requirement; do conda install --yes $requirement; done < requirements.txt
-- Run python flask_app.py
+  - ```bash
+    pip install -r pip_requirements.txt
+    ```
+  - ```bash
+    while read requirement; do conda install --yes $requirement; done < requirements.txt
+    ```
+- Run 
+```bash
+  python flask_app.py
+```
 - Enjoy it!
 <img width="948" alt="lanGuesser" src="https://user-images.githubusercontent.com/38654875/59158812-84549380-8ac0-11e9-9293-70b2f926b48e.png">
