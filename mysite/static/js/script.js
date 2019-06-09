@@ -24,7 +24,6 @@ $(document).on('click', '#button-predict', function () {
     }
     else {
         var requestURL = "predict?code=" + codeVal;
-        //var requestURL = "https://lanGuesser.pythonanywhere.com/predict?code=" + codeVal;
 
         buttonPredict.addClass("disable");
         $.getJSON(requestURL, function (data) {
