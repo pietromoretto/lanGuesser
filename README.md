@@ -19,22 +19,22 @@ Model has been trained on a [Jupyter Notebook](lanGuesser.ipynb) in Google Colab
 In [mysite](mysite) folder there is a Flask Web App that allows you to test the model on your local computer.
 ### Steps
 - Create a virtual environment with either
-  - ```bash
+  ```bash
     virtualenv myenv
-    ```
-  - ```bash
+  ```
+  ```bash
     conda create --name myenv
-    ```
+  ```
 - Install necessary packages with either
-  - ```bash
+  ```bash
     pip install -r pip_requirements.txt
-    ```
-  - ```bash
+  ```
+  ```bash
     while read requirement; do conda install --yes $requirement; done < requirements.txt
-    ```
+  ```
 - Run 
-```bash
-  python flask_app.py
-```
+  ```bash
+    python flask_app.py
+  ```
 - Enjoy it!
 <img width="948" alt="lanGuesser" src="https://user-images.githubusercontent.com/38654875/59158812-84549380-8ac0-11e9-9293-70b2f926b48e.png">
